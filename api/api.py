@@ -14,5 +14,3 @@ def artista(nome):
     b = json.dumps(a)
 
     return b
-
-
