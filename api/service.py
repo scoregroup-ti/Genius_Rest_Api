@@ -25,15 +25,15 @@ class Musicas:
         nome = nome.upper()
         saida = (f'Artista : {nome}')
         while (x < 10):
-            teste = []
-            teste.append(saida)
+            retorno = []
+            retorno.append(saida)
             for hits in json_data["response"]["hits"]:
                 x += 1
                 teste2 = {}
                 teste2['Top'] = x
                 teste2['Musica'] = hits["result"]["title"]
-                teste.append(teste2)
+                retorno.append(teste2)
 
-        return teste
+        return retorno
 
 
